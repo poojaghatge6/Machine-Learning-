@@ -9,3 +9,11 @@ http://bits.csb.pitt.edu/mscbio2065/assignments/assign3/train_labels
 -The dataset was loaded as Resilient Distributed Datasets(Rdd) and various Rdd operations like MapReduce, broadcast, collect, etc., were performed on it.
 
 Technology Stack: Google Cloud DataProc cluster, pyspark, python.
+
+
+Execution:
+```linux
+gcloud dataproc clusters create kmeans-pooja --zone us-east1-b --region us-east1 --num-workers 16 --properties spark:spark.executor.heartbeatInterval=120,spark:spark.dynamicAllocation.enabled=false --initialization-actions gs://kmeans_data/dataproc.init
+gcloud dataproc jobs submit pyspark 1000Genome.py --cluster kmeans-pooja --region us-east1 -- gs://kmeans_data/train_labels gs://kmeans_data/large_train gs://kmeans_data/large_test predictions
+
+```
