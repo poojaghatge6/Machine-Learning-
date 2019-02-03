@@ -2,7 +2,7 @@ Aim: To predict a person's geographic position from its genotype.
 
 Data Source:
 https://storage.googleapis.com/kmeans_data/large_train [6 GB]
-http://bits.csb.pitt.edu/mscbio2065/assignments/assign3/train_labels
+https://storage.googleapis.com/kmeans_data/train_labels
 
 -Implemented kNN(k-nearest neighbors) algorithm in a distributed environment of Google Cloud DataProc on a cluster with 16 quad-core worker nodes which gave 92.2% accuracy within 15mins.
 
