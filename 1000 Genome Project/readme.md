@@ -8,7 +8,9 @@ https://storage.googleapis.com/kmeans_data/train_labels
 
 -Implemented kNN(k-nearest neighbors) algorithm in a distributed environment on a Spark cluster with 16 quad-core worker nodes which gave 92.2% accuracy within 15mins.
 
--The dataset was loaded as Resilient Distributed Datasets(Rdd) and various operations on Rdd like MapReduce, broadcast, collect, filter etc., were performed.
+-The dataset was loaded as Resilient Distributed Datasets(Rdd) and various operations like MapReduce, broadcast, collect, filter etc., were performed on the Rdd.
+
+-The speciality of using Rdd is that it keeps the data in the Main Memory of the various worker nodes.
 
 Technology Stack: Google Cloud SDK, Google Cloud Dataproc, Spark, pyspark, python.
 
