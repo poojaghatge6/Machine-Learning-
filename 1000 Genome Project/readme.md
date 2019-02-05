@@ -1,8 +1,8 @@
 Aim: To predict a person's geographic position from its genotype.
 
 Data Source:
-https://storage.googleapis.com/kmeans_data/large_train [6 GB]
-https://storage.googleapis.com/kmeans_data/train_labels
+- https://storage.googleapis.com/kmeans_data/large_train [6 GB]
+- https://storage.googleapis.com/kmeans_data/train_labels
 
 - Google Cloud Dataproc provides Spark and Hadoop clusters used for big data and distributed computing.
 - Implemented kNN(k-nearest neighbors) algorithm in a distributed environment on a Spark cluster with 16 quad-core worker nodes which gave 92.2% accuracy within 15mins.
