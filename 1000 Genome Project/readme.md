@@ -1,10 +1,11 @@
 Aim: To predict a person's geographic position from its genotype.
 
 Introduction:
-We are just 0.1% different from other individuals based on our genome. Human Genomes are 99.9% similar to each other. When we study this 0.1% variations in genotype we can draw interesting conclusions like their geographic locations, diseases, etc.
+We are just 0.1% different from other individuals based on our genome. Human Genomes are 99.9% similar to each other. When we study this 0.1% genomic variations and can draw interesting conclusions like their geographic locations, diseases, etc.
 
 Data Source and Description:
 - https://storage.googleapis.com/kmeans_data/large_train [6 GB]
+  * This file contains person's id, position on the genome of the variant, and number of the variants 0, 1 or 2 at that position for that individual. It describes the variants in different individuals.
 ```
 NA21141 15273 2
 NA21144 15273 2
@@ -12,6 +13,7 @@ HG00096 57322 0
 HG00099 57322 0
 ```
 - https://storage.googleapis.com/kmeans_data/train_labels
+  * The mapping of people's id with their geographic location.
 ```
 NA20763 EUR
 HG01589 SAS
