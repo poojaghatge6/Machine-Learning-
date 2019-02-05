@@ -22,7 +22,8 @@ Important steps:
 
 Execution:
 ```linux
-gcloud dataproc clusters create kmeans-pooja --zone us-east1-b --region us-east1 --num-workers 16 --properties spark:spark.executor.heartbeatInterval=120,spark:spark.dynamicAllocation.enabled=false --initialization-actions gs://kmeans_data/dataproc.init
-gcloud dataproc jobs submit pyspark 1000Genome.py --cluster kmeans-pooja --region us-east1 -- gs://kmeans_data/train_labels gs://kmeans_data/large_train gs://kmeans_data/large_test predictions
+gcloud dataproc clusters create cluster_name --zone us-east1-b --region us-east1 --num-workers 16 --properties spark:spark.executor.heartbeatInterval=120,spark:spark.dynamicAllocation.enabled=false --initialization-actions gs://kmeans_data/dataproc.init
+gcloud dataproc jobs submit pyspark 1000Genome.py --cluster cluster_name --region us-east1 -- gs://kmeans_data/train_labels gs://kmeans_data/large_train gs://kmeans_data/large_test predictions
+gcloud dataproc clusters delete cluster_name --region us-east1 --quiet
 
 ```
