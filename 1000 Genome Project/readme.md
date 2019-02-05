@@ -22,9 +22,9 @@ Important steps:
 
 -Run the execution steps shown below with your own cluster name, resources and location preferences.
 
--It is better if you have your storage bucket where your data is stored and cluster in the same region.
+-It is better if you have your storage bucket and cluster in the same region.
 
--Dont't forget to delete the cluster once you finish the execution otherwise money will be deducted from your billing account for using the resources.
+-Dont't forget to delete the cluster once you finish the execution otherwise, money will be deducted from your billing account for using the resources.
 
 
 Execution:
