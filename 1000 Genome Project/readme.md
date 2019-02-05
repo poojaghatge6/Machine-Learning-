@@ -1,8 +1,25 @@
 Aim: To predict a person's geographic position from its genotype.
 
-Data Source:
+Introduction:
+We are just 0.1% different from other individuals based on our genome. Human Genomes are 99.9% similar to each other. When we study this 0.1% variations in genotype we can draw interesting conclusions like their geographic locations, diseases, etc.
+
+Data Source and Description:
 - https://storage.googleapis.com/kmeans_data/large_train [6 GB]
+```
+NA21141 15273 2
+NA21144 15273 2
+HG00096 57322 0
+HG00099 57322 0
+```
 - https://storage.googleapis.com/kmeans_data/train_labels
+```
+NA20763 EUR
+HG01589 SAS
+HG03488 SAS
+HG02155 EAS
+HG03754 SAS
+HG03571 AFR
+```
 
 Highlights:
 - Google Cloud Dataproc provides Spark and Hadoop clusters used for big data and distributed computing.
