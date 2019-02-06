@@ -3,7 +3,9 @@ Team members: Pooja Ghatge, Brandan Dunham
 Research advisor: Dr. Madhavi Ganapathiraju (Department of Biomedical Informatics)
 
 Techniques: Object Detection in images, Active Learning, Deep Learning(Artificial Neural Networks).
+
 Technology: Tensorflow, Google Cloud, Python.
+
 Data Size:
 1) 86 GB (training images)
 2) 12 GB (test images)
