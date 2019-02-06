@@ -1,7 +1,7 @@
 Aim: To predict a person's geographic position from its genotype.
 
 Introduction:
-We are just 0.1% different from other individuals based on our genome. Human Genomes are 99.9% similar to each other. When we study this 0.1% genomic variations and can draw interesting conclusions like their geographic locations, diseases, etc.
+We are just 0.1% different from other individuals based on our genome. Human Genomes are 99.9% similar to each other. When we study this 0.1% genomic variations, we can draw interesting conclusions like their geographic locations, diseases, etc.
 
 Data Source and Description:
 - https://storage.googleapis.com/kmeans_data/large_train [6 GB]
