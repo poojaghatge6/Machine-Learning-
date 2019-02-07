@@ -25,7 +25,7 @@ targ_sim.txt: Each line represents target1, target2, similarity value.
 345,5,4.07
 675,1,5.38
 ```
-correct_cmpd_sim.txt: Each line represents compound1, compound2, similarity value.
+correct_cmpd_sim.txt[300GB]: Each line represents compound1, compound2, similarity value.
 ```
 11765,2,4.06
 13423,3,5.78
