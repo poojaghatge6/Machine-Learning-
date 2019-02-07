@@ -38,7 +38,7 @@ Highlights:
 - Implemented Alternating Least Squares(ALS) algorithm, which Completes the missing values in the Matrix, in a distributed environment on a Spark cluster with 32 quad-core worker nodes which gave 71.2% accuracy within 30mins.
 - 300GB of data was processed in 30mins in a most optimal way.
 
-Technology Stack: Google Cloud SDK, Google Cloud Dataproc, Spark, pyspark, python.
+Technology Stack: Google Cloud SDK, Google Cloud Dataproc, Spark, PySpark, Python, MLlib.
 
 Important steps:
 
