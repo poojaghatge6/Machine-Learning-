@@ -35,10 +35,8 @@ correct_cmpd_sim.txt[300GB]: Each line represents compound1, compound2, similari
 
 Highlights:
 - Google Cloud Dataproc provides Spark and Hadoop clusters used for big data and distributed computing.
-- Implemented kNN(k-nearest neighbors) algorithm in a distributed environment on a Spark cluster with 16 quad-core worker nodes which gave 92.2% accuracy within 15mins.
-- The dataset was loaded as Resilient Distributed Datasets(Rdd) and various operations like MapReduce, broadcast, collect, filter etc., were performed on the Rdd.
-- The neighbors are decided based on the distance between their genetic fingerprint.
-- The speciality of using Spark Rdd is that although data appears as a single unit, it is distributed and stored in the Main Memory of the various worker nodes which increases the computational speed.
+- Implemented Alternating Least Squares(ALS) algorithm, which Completes the missing values in the Matrix, in a distributed environment on a Spark cluster with 32 quad-core worker nodes which gave 71.2% accuracy within 30mins.
+- 300GB of data was processed in 30mins.
 
 Technology Stack: Google Cloud SDK, Google Cloud Dataproc, Spark, pyspark, python.
 
@@ -53,8 +51,8 @@ Important steps:
 
 Execution:
 ```linux
-gcloud dataproc clusters create cluster_name --zone us-east1-b --region us-east1 --num-workers 16 --properties spark:spark.executor.heartbeatInterval=120,spark:spark.dynamicAllocation.enabled=false --initialization-actions gs://kmeans_data/dataproc.init
-gcloud dataproc jobs submit pyspark 1000Genome.py --cluster cluster_name --region us-east1 -- gs://kmeans_data/train_labels gs://kmeans_data/large_train gs://kmeans_data/large_test predictions
+gcloud dataproc clusters create cluster_name --zone us-east1-b --region us-east1 --num-workers 32 --properties spark:spark.executor.heartbeatInterval=120,spark:spark.default.parallelism=128,spark:spark.executor.extraJavaOptions=-Xss128M,spark:spark.driver.extraJavaOptions=-Xss128M  --initialization-actions gs://kmeans_data/dataproc.init
+gcloud dataproc jobs submit pyspark --region us-east1 --cluster cluster_name assign_sim_v8.py -- gs://mscbio2065-data/randomtrain.csv gs://mscbio2065-data/randommissing.csv  output.csv
 gcloud dataproc clusters delete cluster_name --region us-east1 --quiet
 
 ```
