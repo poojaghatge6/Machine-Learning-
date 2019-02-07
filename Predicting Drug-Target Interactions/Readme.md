@@ -1,8 +1,7 @@
 Aim: To predict effects of Chemical Compounds('Drugs') on cell lines and Biological assays('Targets').
 
 Data Source and Description:
-train.csv 
-  * Each line of this file represents row,column and value where the rows are indices of compounds and the columns indices of targets.
+train.csv: Each line of this file represents row,column and value where the rows are indices of compounds and the columns indices of targets.
 ```
 122839,0,4.72
 49129,2,4.2
@@ -11,24 +10,21 @@ train.csv
 23327,3,4.07
 45087,3,5.38
 ```
-missing.csv
-  * Each line of this file represents row,column values, that is the location of matrix where values are missing.
+missing.csv: Each line of this file represents row,column values, that is the location of matrix where values are missing.
 ```
 89115,2
 7402,3
 53327,3
 95087,3
 ```
-targ_sim.txt
-  * Each line represents target1, target2, similarity value.
+targ_sim.txt: Each line represents target1, target2, similarity value.
 ```
 765,2,4.06
 123,3,5.78
 345,5,4.07
 675,1,5.38
 ```
-correct_cmpd_sim.txt
-  * Each line represents compound1, compound2, similarity value.
+correct_cmpd_sim.txt: Each line represents compound1, compound2, similarity value.
 ```
 11765,2,4.06
 13423,3,5.78
