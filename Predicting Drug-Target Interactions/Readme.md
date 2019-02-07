@@ -1,6 +1,7 @@
 Aim: To predict effects of Chemical Compounds('Drugs') on cell lines and Biological assays('Targets').
 
-Data Source and Description:
+Data Description:
+
 train.csv: Each line of this file represents row,column and value where the rows are indices of compounds and the columns indices of targets.
 ```
 122839,0,4.72
