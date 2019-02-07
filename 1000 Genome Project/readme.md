@@ -27,6 +27,7 @@ Highlights:
 - Google Cloud Dataproc provides Spark and Hadoop clusters used for big data and distributed computing.
 - Implemented kNN(k-nearest neighbors) algorithm in a distributed environment on a Spark cluster with 16 quad-core worker nodes which gave 92.2% accuracy within 15mins.
 - The dataset was loaded as Resilient Distributed Datasets(Rdd) and various operations like MapReduce, broadcast, collect, filter etc., were performed on the Rdd.
+- The neighbors are decided based on the distance between their genetic fingerprint.
 - The speciality of using Spark Rdd is that although data appears as a single unit, it is distributed and stored in the Main Memory of the various worker nodes which increases the computational speed.
 
 Technology Stack: Google Cloud SDK, Google Cloud Dataproc, Spark, pyspark, python.
