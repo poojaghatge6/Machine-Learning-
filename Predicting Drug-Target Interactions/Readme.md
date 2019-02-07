@@ -36,7 +36,7 @@ correct_cmpd_sim.txt[300GB]: Each line represents compound1, compound2, similari
 Highlights:
 - Google Cloud Dataproc provides Spark and Hadoop clusters used for big data and distributed computing.
 - Implemented Alternating Least Squares(ALS) algorithm, which Completes the missing values in the Matrix, in a distributed environment on a Spark cluster with 32 quad-core worker nodes which gave 71.2% accuracy within 30mins.
-- 300GB of data was processed in 30mins.
+- 300GB of data was processed in 30mins in a most optimal way.
 
 Technology Stack: Google Cloud SDK, Google Cloud Dataproc, Spark, pyspark, python.
 
